@@ -110,6 +110,20 @@ top blog styles
 .course {
     width: 250px;
     height: 270px;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 0 5px 10px whitesmoke;
+}
+
+.course-title {
+    font-size: 20px;
+    color: #1E1E1E;
+}
+
+.course-author {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ED6B4F;
 }
 
 .course .course-banner img {
@@ -133,4 +147,54 @@ top blog styles
 
 .fa-star.empty {
     color: #AEAEAE;
+}
+
+.course-duration {
+    border: 1px solid red;
+    background-color: #FFE4E8;
+    border-radius: 15px;
+    margin-right: 20px;
+    padding: 5px;
+    color: red;
+}
+
+
+
+/* ..................
+....Media Queries.....
+....................... */
+/* ....Mobile Devices.. */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+
+}
+
+/* ...Tablet Devices... */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.courses,
+.blogs {
+    grid-template-columns: repeat(1, 1fr);
+}
 }
