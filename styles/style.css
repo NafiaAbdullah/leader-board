@@ -188,13 +188,12 @@ top blog styles
         width: 100%;
     }
 
-    .players,
-    {
-    grid-template-columns: repeat(2, 1fr);
-}
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-.courses,
-.blogs {
-    grid-template-columns: repeat(1, 1fr);
-}
+    .courses,
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
